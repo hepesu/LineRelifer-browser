@@ -1,1 +1,3 @@
-# LineRelifer_browser
+# LineRelifer-browser
+
+Run LineRelifer in your browser.
