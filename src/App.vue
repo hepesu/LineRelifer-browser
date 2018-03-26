@@ -61,7 +61,7 @@ export default {
         //store module on component instance as non-reactive object
         this.model = new KerasJS.Model({
             filepath: MODEL_PATH,
-            gpu: false
+            gpu: true
         });
 
         this.model.events.on('loadingProgress', this.handleLoadingProgress);
