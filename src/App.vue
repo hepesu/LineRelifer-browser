@@ -37,10 +37,9 @@ import {
     equalizeHistAdaptive
 } from './histogram';
 
-const MODEL_PATH = "/assets/model_180317_128.bin";
-// process.env.NODE_ENV === "production"
-//      ? "https://hepesu.github.io/LineRelifer-browser/assets/model_180317_128.bin"
-//      : "/assets/model_180317_128.bin";
+const MODEL_PATH = process.env.NODE_ENV === "production"
+      ? "https://hepesu.github.io/LineRelifer-browser/assets/model_180317_128.bin"
+      : "/assets/model_180317_128.bin";
 
 
 const inputProcess = cwise({
@@ -62,7 +61,7 @@ export default {
         //store module on component instance as non-reactive object
         this.model = new KerasJS.Model({
             filepath: MODEL_PATH,
-            gpu: true
+            gpu: false
         });
 
         this.model.events.on('loadingProgress', this.handleLoadingProgress);
