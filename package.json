@@ -13,16 +13,11 @@
   "dependencies": {
     "@tensorflow/tfjs": "^0.7.0",
     "bluebird": "^3.5.1",
-    "has-flag": "^3.0.0",
     "image-rotate": "^1.0.0",
     "keras-js": "^1.0.3",
     "lodash": "^4.17.5",
     "pngjs": "^3.3.2",
-    "process-nextick-args": "^2.0.0",
-    "set-blocking": "^2.0.0",
-    "util-deprecate": "^1.0.2",
-    "vue": "^2.5.16",
-    "yargs-parser": "^10.0.0"
+    "vue": "^2.5.16"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
